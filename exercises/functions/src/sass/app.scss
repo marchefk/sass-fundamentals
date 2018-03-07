@@ -20,9 +20,9 @@
 }
 
 .theme-2 {
-  @include theme(#609, $darkenpct: 10%);
+  @include theme(#99B898, $darkenpct: 10%);
 }
 
 .theme-3 {
-  @include theme($hopbush);
+  @include theme(#FF8C94);
 }

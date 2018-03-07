@@ -1,0 +1,27 @@
+@for $i from 1 through 5 {
+  $num: $i*5;
+  .m-t-#{$num} {
+    margin-top: $num+px;
+  }
+  .m-b-#{$num} {
+    margin-bottom: $num+px;
+  }
+  .m-l-#{$num} {
+    margin-left: $num+px;
+  }
+  .m-r-#{$num} {
+    margin-right: $num+px;
+  }
+  .p-t-#{$num} {
+    padding-top: $num+px;
+  }
+  .p-b-#{$num} {
+    padding-bottom: $num+px;
+  }
+  .p-l-#{$num} {
+    padding-left: $num+px;
+  }
+  .p-r-#{$num} {
+    padding-right: $num+px;
+  }
+}

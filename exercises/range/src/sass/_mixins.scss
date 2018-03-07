@@ -1,3 +1,41 @@
+@mixin range-track() {
+  &::-webkit-slider-runnable-track {
+    @content
+  }
+  &::-moz-range-track {
+    @content
+  }
+}
+
 @mixin range-thumb() {
- 
+  &::-ms-thumb {
+    @content
+  }
+  &::-moz-range-thumb {
+    @content
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -14px;
+    @content
+  }
+}
+
+@mixin ms-fill() {
+  background: $darkblue;
+  border: $track-border;
+  border-radius: 2.6px;
+  box-shadow: $track-box-shadow;
+}
+
+@mixin focus-track(){
+  &::-webkit-slider-runnable-track {
+    @content
+  }
+  &::-ms-fill-lower {
+    @content
+  }
+  &::-ms-fill-upper {
+    @content
+  }
 }
